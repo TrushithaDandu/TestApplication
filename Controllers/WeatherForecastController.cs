@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -23,6 +24,11 @@ namespace TestApplication.Controllers
             _logger = logger;
         }
 
+        [HttpGet]
+        public IEnumerable GetListofEmployees()
+        {
+            return null;
+        }
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
